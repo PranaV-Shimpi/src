@@ -5,15 +5,15 @@ const port = process.env.PORT;
 require("./db/db");
 
 const app = express();
+app.use(bodyParsar.urlencoded({ extended: true }));
 
 app.use(express.json());
 app.use(hospRouter);
 app.use(patientRouter);
 
 
-
 const bodyParsar = require("body-parser");
-app.use(bodyParsar.urlencoded({ extended: true }));
+
 
 
 app.listen(port, () => {
