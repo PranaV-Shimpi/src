@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(hospRouter);
 app.use(patientRouter);
 
-app.use(bodyParsar.urlencoded({ extended: false
+
 
 const bodyParsar = require("body-parser");
 app.use(bodyParsar.urlencoded({ extended: true }));
