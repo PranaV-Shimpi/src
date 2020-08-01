@@ -43,7 +43,7 @@ router.delete("/patients/:id", async (req, res) => {
   }
 });
 //-------------------------------------------------------------
-router.post("/patients/updatewardbed/:id", async (req, res) => {
+router.patch("/patients/updatewardbed/:id", async (req, res) => {
   //update patient bed number and ward number
 
   try {
